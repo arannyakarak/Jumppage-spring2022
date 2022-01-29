@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #580805;
-    
+    --secondary-color: #773531;
   }
   
 * {
@@ -180,7 +180,14 @@
     text-align: center;
     height: 100%;
   }
+  /* footer */
 
+  .footer{
+    
+  background-color: var(--secondary-color);
+  color: #fff;
+  height: 150px;
+}
   /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
@@ -201,10 +208,13 @@
     
   }
 
-  .showcase-form {
+  .showcase-intro {
     justify-self: center;
     margin: auto;
    
+  }
+  .footer{
+    height: auto;
   }
 }
 /* Mobile */
@@ -223,6 +233,6 @@
   }
   
   .showcase-intro {
-    width: 300px;
+    width: 95%;
   }
 }

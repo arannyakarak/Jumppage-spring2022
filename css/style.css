@@ -188,12 +188,25 @@
   color: #fff;
   height: 150px;
 }
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+
+
+
   /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
   .showcase .grid,
   .Projects .grid,
-  .Projects .grid
+  .Projects .grid,
+  .footer .grid
   {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -215,6 +228,12 @@
   }
   .footer{
     height: auto;
+  }
+  #footer .social-icon  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 }
 /* Mobile */

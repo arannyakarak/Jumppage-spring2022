@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-color: #580805;
-    --secondary-color: #773531;
+    --primary-color: #470a08f5;
+    --secondary-color: #883f3b;
   }
   
 * {
@@ -15,6 +15,15 @@
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
+  }
+  #header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 10px;
   }
   
   ul {
@@ -31,6 +40,9 @@
     font-weight: 500;
     line-height: 1.2;
     margin: 10px 0;
+  }
+  h3{
+    color:  var(--secondary-color); ;
   }
   
   p {
@@ -67,13 +79,21 @@
     padding: 10px 30px;
     cursor: pointer;
     background: var(--primary-color);
+   
     color: #fff;
+    text-transform: uppercase;
     border: none;
     border-radius: 5px;
+  }
+  .btn:hover {
+    color: white;
+    background: var(--secondary-color);
   }
   /* Navbar */
 .navbar {
     background-color: var(--primary-color);
+    background-image:url(../images/burgundy.jpg) ;
+    background-position: center;
     color: #fff;
     height: 70px;
   }
@@ -87,6 +107,7 @@
 
   .navbar a {
     color: #fff;
+    text-transform: uppercase;
     padding: 10px;
     margin: 0 5px;
     
@@ -94,10 +115,13 @@
   .navbar a:hover {
     border-bottom: 2px #fff solid;
   }
+  
   /* Showcase */
 .showcase {
     height: 400px;
     background-color: var(--primary-color);
+    background-image:url(../images/burgundy.jpg) ;
+    background-position: center;
     color: #fff;
     position: relative;
   }
@@ -127,7 +151,7 @@
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
-    /* animation: slideInFromRight 1s ease-in; */
+    
   }
   
 
@@ -157,12 +181,11 @@
 .Projects {
     padding-top: 100px;
     padding-bottom: 70px;
-    
-    /* animation: slideInFromBottom 1s ease-in; */
   }
 
   .projects-heading {
     color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       text-align: center;
       font-size: 50px;
       font-weight: 600;
@@ -172,7 +195,6 @@
   }
   .grid-4 {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-content: center;
@@ -180,17 +202,23 @@
     text-align: center;
     height: 100%;
   }
+  #labs .grid-4 {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+  }
+
   /* footer */
 
   .footer{
     
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
   height: 150px;
 }
 #footer .social-icon {
 	display: flex;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 #footer .social-item {
 	height: 50px;
@@ -206,7 +234,7 @@
   .showcase .grid,
   .Projects .grid,
   .Projects .grid,
-  .footer .grid
+  .footer   .grid
   {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -214,10 +242,11 @@
 
   .showcase {
     height: auto;
+    background-position: center;
   }
   .showcase-text {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 110px;
     
   }
 
@@ -226,6 +255,9 @@
     margin: auto;
    
   }
+  .navbar{
+    background-position: center;
+  }
   .footer{
     height: auto;
   }
@@ -233,6 +265,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
     
   }
 }
@@ -240,6 +273,7 @@
 @media (max-width: 500px) {
   .navbar {
     height: 110px;
+    
   }
 
   .navbar .flex {
@@ -248,9 +282,10 @@
 
   .navbar ul {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
   }
-  
+ 
   .showcase-intro {
     width: 95%;
   }

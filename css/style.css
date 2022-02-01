@@ -1,170 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-color: #470a08f5;
-    --secondary-color: #883f3b;
-  }
-  
+  --primary-color: #470a08f5;
+  --secondary-color: #883f3b;
+}
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: 'Lato', sans-serif;
-    color: #333;
-    line-height: 1.6;
-  }
-  #header {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  h1,
-  h2 {
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 10px 0;
-  }
-  h3{
-    color:  var(--secondary-color); ;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  img {
-    width: 100%;
-  }
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-  }
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
 
-  .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: var(--primary-color);
-   
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-  }
-  .btn:hover {
-    color: white;
-    background: var(--secondary-color);
-  }
-  /* Navbar */
+#header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+h3 {
+  color: var(--secondary-color);
+  ;
+}
+
+p {
+  margin: 10px 0;
+  /* font-size: 1rem; */
+  line-height: 1.6rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: white;
+  background: var(--secondary-color);
+}
+
+/* Navbar */
 .navbar {
-    background-color: var(--primary-color);
-    background-image:url(../images/burgundy.jpg) ;
-    background-position: center;
-    color: #fff;
-    height: 70px;
-  }
+  background-color: var(--primary-color);
+  background-image: url(../images/burgundy.jpg);
+  background-position: center;
+  color: #fff;
+  height: 70px;
+}
 
-  .navbar .flex {
-    justify-content: space-between;
-  }
-  .navbar ul {
-    display: flex;
-  }
+.navbar .flex {
+  justify-content: space-between;
+}
 
-  .navbar a {
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 0 5px;
-    
-  }
-  .navbar a:hover {
-    border-bottom: 2px #fff solid;
-  }
-  
-  /* Showcase */
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0 5px;
+
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* Showcase */
 .showcase {
-    height: 400px;
-    background-color: var(--primary-color);
-    background-image:url(../images/burgundy.jpg) ;
-    background-position: center;
-    color: #fff;
-    position: relative;
-  }
+  height: 400px;
+  background-color: var(--primary-color);
+  background-image: url(../images/burgundy.jpg);
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
 
-  .showcase h1 {
-    font-size: 40px;
-  }
-  .showcase h2 {
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--primary-color);
-  }
-  
-  .showcase p {
-    margin: 20px 0;
-  }
-  .showcase .grid {
-    overflow: visible;
-    grid-template-columns: 55% auto;
-    gap: 30px;
-  }
-  .showcase-intro {
-    position: relative;
-    top: 60px;
-    height: auto;
-    width: 500px;
-    padding: 40px;
-    z-index: 100;
-    justify-self: flex-end;
-    
-  }
-  
+.showcase h1 {
+  font-size: 40px;
+ 
+}
 
-  .card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-  }
+.showcase h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
 
-   .showcase::before,  
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+.showcase-intro {
+  position: relative;
+  top: 60px;
+  height: auto;
+  width: 500px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+
+}
+
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.showcase::before,
 .showcase::after {
   content: '';
   position: absolute;
@@ -174,68 +191,72 @@
   left: 0;
   background: #fff;
   transform: skewY(-4deg);
-  
+
 }
 
 /* Projects */
 .Projects {
-    padding-top: 100px;
-    padding-bottom: 70px;
-  }
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
 
-  .projects-heading {
-    color: var(--primary-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      font-size: 50px;
-      font-weight: 600;
-    max-width: 500px;
-    margin: auto;
-    padding-bottom: 50px;
-  }
-  .grid-4 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-  }
-  #labs .grid-4 {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   
-  }
+.projects-heading {
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+}
 
-  /* footer */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
 
-  .footer{
-    
+#labs .grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+/* footer */
+
+.footer {
+
   background-color: var(--primary-color);
   color: #fff;
   height: 150px;
 }
+
 #footer .social-icon {
-	display: flex;
-	/* margin-bottom: 30px; */
+  display: flex;
+  /* margin-bottom: 30px; */
 }
+
 #footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
 }
 
 
 
-  /* Tablets and under */
+/* Tablets and under */
 @media (max-width: 768px) {
+
   .grid,
   .showcase .grid,
   .Projects .grid,
   .Projects .grid,
-  .footer   .grid
-  {
+  .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -244,36 +265,41 @@
     height: auto;
     background-position: center;
   }
+
   .showcase-text {
     text-align: center;
     margin-top: 110px;
-    
+
   }
 
   .showcase-intro {
     justify-self: center;
     margin: auto;
-   
+
   }
-  .navbar{
+
+  .navbar {
     background-position: center;
   }
-  .footer{
+
+  .footer {
     height: auto;
   }
-  #footer .social-icon  {
+
+  #footer .social-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    
+
   }
 }
+
 /* Mobile */
 @media (max-width: 500px) {
   .navbar {
     height: 110px;
-    
+
   }
 
   .navbar .flex {
@@ -285,7 +311,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
   }
- 
+
   .showcase-intro {
     width: 95%;
   }

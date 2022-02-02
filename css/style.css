@@ -141,7 +141,7 @@ img {
 
 .showcase h1 {
   font-size: 40px;
- 
+  text-shadow: 1px 1px 3px rgba(252, 251, 251, 0.8);
 }
 
 .showcase h2 {
